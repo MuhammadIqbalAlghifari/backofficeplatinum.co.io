@@ -91,7 +91,7 @@ a {
 }
 .nav_link {
     position:  relative;
-    color:  white;
+    color:  var(--first-color);
     margin-bottom:  1.5rem;
     transition:  .3s;
 }
