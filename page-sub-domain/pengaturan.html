@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="../src/file-input.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <link rel="stylesheet" href="../src/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body style="background-color: #f8f8f8;" id="body-pd">
+
+    <!-- Start Sidebar -->
+
+    <section class="Sidebar " >
+
+      <header class="header" id="header">
+          <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+          <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+      </header>
+
+      <div class="l-navbar" id="nav-bar">
+          <nav class="nav">
+
+                      <div>  
+                          <a href="#" class="nav_logo"> 
+                              <i class='bx bx-layer nav_logo-icon'></i> 
+                              <span class="nav_logo-name">Platinum</span> 
+                          </a>
+
+                          <div class="nav_list">
+                              <ul>
+                                  <li>        
+                                      <a href="./backoffice-home.html" class="nav_link">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house nav_icon w-5 h-5" viewBox="0 0 16 16">
+                                              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                                          </svg> 
+                                          <span class="nav_name">Home</span> 
+                                      </a>  
+                                  </li>    
+                                  <li>    
+                                      <a href="./backoffice-dashboard.html" class="nav_link"> 
+                                          <i class='bx bx-grid-alt nav_icon'></i> 
+                                          <span class="nav_name">Dashboard</span> 
+                                      </a> 
+                                  </li>    
+                                  <li>    
+                                      <a href="./web-management.html" class="nav_link">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window w-5 h-5" viewBox="0 0 16 16">
+                                              <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                                              <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                                          </svg>
+                                          <span class="nav_name">Web Management</span> 
+                                      </a> 
+                                  </li>    
+                                  <li>    
+                                      <a href="./profil.html" class="nav_link">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people w-5 h-5" viewBox="0 0 16 16">
+                                              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                                          </svg>
+                                          <span class="nav_name">Profil</span> 
+                                      </a> 
+                                  </li>    
+                                  <li>    
+                                      <a href="./logo-edit.html" class="nav_link"> 
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image w-5 h-5" viewBox="0 0 16 16">
+                                              <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                              <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
+                                          </svg> 
+                                          <span class="nav_name">Logo</span> 
+                                      </a> 
+                                  </li>    
+                                  <li>    
+                                      <a href="./pengaturan.html" class="nav_link">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear w-5 h-5" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                          <span class="nav_name">Pengaturan</span> 
+                                      </a>
+                                  </li>    
+                              </ul> 
+                          </div>
+                      </div> 
+                      <a href="../index.html" class="nav_link"> 
+                          <i class='bx bx-log-out nav_icon'>
+
+                          </i> <span class="nav_name">SignOut</span> 
+                      </a>  
+          </nav>
+      </div>
+  </section>
+
+    <!-- End Sidebar -->
+
+    <main>
+      <div class="py-6">
+            <!-- Breadcrumb Start -->
+            <div
+              class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+            >
+              <h2 class="text-title-md2 font-bold text-black dark:text-white">
+                Pengaturan
+              </h2>
+
+            </div>
+            <!-- Breadcrumb End -->
+
+            <!-- ====== Settings Section Start -->
+            <div class="grid grid-cols-1 gap-8">
+              <div class="col-span-5 xl:col-span-3">
+                <div
+                  class=" px-4 rounded-sm border border-stroke bg-white shadow-md dark:border-strokedark dark:bg-boxdark"
+                >
+                  <div
+                    class="border-b border-stroke py-4 px-4 dark:border-strokedark"
+                  >
+                    <h3 class="font-medium text-black dark:text-white">
+                      Informasi Pribadi / Perusahaan
+                    </h3>
+                  </div>
+                  <div class="p-4">
+                    <form action="#">
+                      <div class="mb-5 flex flex-col gap-4 sm:flex-row">
+                        <div class="w-full sm:w-1/2">
+                          <label
+                            class="mb-3 block text-sm font-medium text-black dark:text-white"
+                            for="fullName"
+                            >Nama Lengkap</label
+                          >
+                          <div class="relative">
+                            <span class="absolute left-4.5 top-4">
+                              <svg
+                                class="fill-current"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g opacity="0.8">
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.72039 12.887C4.50179 12.1056 5.5616 11.6666 6.66667 11.6666H13.3333C14.4384 11.6666 15.4982 12.1056 16.2796 12.887C17.061 13.6684 17.5 14.7282 17.5 15.8333V17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5V15.8333C15.8333 15.1703 15.5699 14.5344 15.1011 14.0655C14.6323 13.5967 13.9964 13.3333 13.3333 13.3333H6.66667C6.00363 13.3333 5.36774 13.5967 4.8989 14.0655C4.43006 14.5344 4.16667 15.1703 4.16667 15.8333V17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5V15.8333C2.5 14.7282 2.93899 13.6684 3.72039 12.887Z"
+                                    fill=""
+                                  />
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M9.99967 3.33329C8.61896 3.33329 7.49967 4.45258 7.49967 5.83329C7.49967 7.214 8.61896 8.33329 9.99967 8.33329C11.3804 8.33329 12.4997 7.214 12.4997 5.83329C12.4997 4.45258 11.3804 3.33329 9.99967 3.33329ZM5.83301 5.83329C5.83301 3.53211 7.69849 1.66663 9.99967 1.66663C12.3009 1.66663 14.1663 3.53211 14.1663 5.83329C14.1663 8.13448 12.3009 9.99996 9.99967 9.99996C7.69849 9.99996 5.83301 8.13448 5.83301 5.83329Z"
+                                    fill=""
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                            <input
+                              class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                              type="text"
+                              name="fullName"
+                              id="fullName"
+                              placeholder="Devid Jhon"
+                              value=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2">
+                          <label
+                            class="mb-3 block text-sm font-medium text-black dark:text-white"
+                            for="phoneNumber"
+                            >No. Telepon</label
+                          >
+                          <input
+                            class="w-full rounded border border-stroke bg-gray py-3 px-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                            type="text"
+                            name="phoneNumber"
+                            id="phoneNumber"
+                            placeholder="+990 3343 7865"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="mb-5">
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                          for="emailAddress"
+                          >Alamat Email</label
+                        >
+                        <div class="relative">
+                          <span class="absolute left-4.5 top-4">
+                            <svg
+                              class="fill-current"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="0.8">
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.33301 4.16667C2.87658 4.16667 2.49967 4.54357 2.49967 5V15C2.49967 15.4564 2.87658 15.8333 3.33301 15.8333H16.6663C17.1228 15.8333 17.4997 15.4564 17.4997 15V5C17.4997 4.54357 17.1228 4.16667 16.6663 4.16667H3.33301ZM0.833008 5C0.833008 3.6231 1.9561 2.5 3.33301 2.5H16.6663C18.0432 2.5 19.1663 3.6231 19.1663 5V15C19.1663 16.3769 18.0432 17.5 16.6663 17.5H3.33301C1.9561 17.5 0.833008 16.3769 0.833008 15V5Z"
+                                  fill=""
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M0.983719 4.52215C1.24765 4.1451 1.76726 4.05341 2.1443 4.31734L9.99975 9.81615L17.8552 4.31734C18.2322 4.05341 18.7518 4.1451 19.0158 4.52215C19.2797 4.89919 19.188 5.4188 18.811 5.68272L10.4776 11.5161C10.1907 11.7169 9.80879 11.7169 9.52186 11.5161L1.18853 5.68272C0.811486 5.4188 0.719791 4.89919 0.983719 4.52215Z"
+                                  fill=""
+                                />
+                              </g>
+                            </svg>
+                          </span>
+                          <input
+                            class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                            type="email"
+                            name="emailAddress"
+                            id="emailAddress"
+                            placeholder="devidjond45@gmail.com"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="mb-5">
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                          for="Username"
+                          >Username</label
+                        >
+                        <input
+                          class="w-full rounded border border-stroke bg-gray py-3 px-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                          type="text"
+                          name="Username"
+                          id="Username"
+                          placeholder="devidjhon24"
+                          value=""
+                        />
+                      </div>
+
+                      <div class="mb-5.5">
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                          for="Username"
+                          >BIO</label
+                        >
+                        <div class="relative">
+                          <span class="absolute left-4.5 top-4">
+                            <svg
+                              class="fill-current"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                opacity="0.8"
+                                clip-path="url(#clip0_88_10224)"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M1.56524 3.23223C2.03408 2.76339 2.66997 2.5 3.33301 2.5H9.16634C9.62658 2.5 9.99967 2.8731 9.99967 3.33333C9.99967 3.79357 9.62658 4.16667 9.16634 4.16667H3.33301C3.11199 4.16667 2.90003 4.25446 2.74375 4.41074C2.58747 4.56702 2.49967 4.77899 2.49967 5V16.6667C2.49967 16.8877 2.58747 17.0996 2.74375 17.2559C2.90003 17.4122 3.11199 17.5 3.33301 17.5H14.9997C15.2207 17.5 15.4326 17.4122 15.5889 17.2559C15.7452 17.0996 15.833 16.8877 15.833 16.6667V10.8333C15.833 10.3731 16.2061 10 16.6663 10C17.1266 10 17.4997 10.3731 17.4997 10.8333V16.6667C17.4997 17.3297 17.2363 17.9656 16.7674 18.4344C16.2986 18.9033 15.6627 19.1667 14.9997 19.1667H3.33301C2.66997 19.1667 2.03408 18.9033 1.56524 18.4344C1.0964 17.9656 0.833008 17.3297 0.833008 16.6667V5C0.833008 4.33696 1.0964 3.70107 1.56524 3.23223Z"
+                                  fill=""
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M16.6664 2.39884C16.4185 2.39884 16.1809 2.49729 16.0056 2.67253L8.25216 10.426L7.81167 12.188L9.57365 11.7475L17.3271 3.99402C17.5023 3.81878 17.6008 3.5811 17.6008 3.33328C17.6008 3.08545 17.5023 2.84777 17.3271 2.67253C17.1519 2.49729 16.9142 2.39884 16.6664 2.39884ZM14.8271 1.49402C15.3149 1.00622 15.9765 0.732178 16.6664 0.732178C17.3562 0.732178 18.0178 1.00622 18.5056 1.49402C18.9934 1.98182 19.2675 2.64342 19.2675 3.33328C19.2675 4.02313 18.9934 4.68473 18.5056 5.17253L10.5889 13.0892C10.4821 13.196 10.3483 13.2718 10.2018 13.3084L6.86847 14.1417C6.58449 14.2127 6.28409 14.1295 6.0771 13.9225C5.87012 13.7156 5.78691 13.4151 5.85791 13.1312L6.69124 9.79783C6.72787 9.65131 6.80364 9.51749 6.91044 9.41069L14.8271 1.49402Z"
+                                  fill=""
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_88_10224">
+                                  <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+
+                          <textarea
+                            class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                            name="bio"
+                            id="bio"
+                            rows="6"
+                            placeholder="Write your bio here"
+                          >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere fermentum urna, eu condimentum mauris tempus ut. Donec fermentum blandit aliquet.
+                            </textarea
+                          >
+                        </div>
+                      </div>
+
+                      <div class="flex justify-end gap-5 mt-4">
+                        <button
+                          class="flex justify-center rounded border border-stroke py-2 px-6 font-medium text-white bg-red-600"
+                          type="submit"
+                        >
+                          Batal
+                        </button>
+                        <button
+                          class="flex justify-center rounded bg-primary py-2 px-6 font-medium text-white bg-blue-700 hover:bg-opacity-90"
+                          type="submit"
+                        >
+                          Simpan
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-5 xl:col-span-2">
+                <div
+                  class="px-8 rounded-sm border border-stroke bg-white shadow-md dark:border-strokedark dark:bg-boxdark"
+                >
+                  <div
+                    class="border-b border-stroke py-4 px-7 mb-4 dark:border-strokedark"
+                  >
+                    <h3 class="font-medium text-black dark:text-white">
+                      Photo Anda
+                    </h3>
+                  </div>
+                  <div class="p-7">
+                    <form action="#">
+                      <div class="mb-4 flex items-center gap-4">
+                        <div class="h-14 w-14 rounded-full">
+                          <img src="./img/Logo-MGI-CORP.png" alt="User" />
+                        </div>
+                        <div class="mb-3">
+                          <span
+                            class="mb-4 font-medium text-black dark:text-white"
+                            >Edit Foto Anda</span
+                          >
+                          <span class="flex gap-5">
+                            <button
+                              class="text-sm font-medium hover:text-primary"
+                            >
+                              Batal
+                            </button>
+                            <button
+                              class="text-sm font-medium hover:text-primary"
+                            >
+                              Update
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div
+                        id="FileUpload"
+                        class="relative mb-5.5 block w-full cursor-pointer appearance-none rounded border-2 border-dashed border-primary bg-gray py-4 px-4 dark:bg-meta-4 sm:py-7.5"
+                      >
+                        <input
+                          type="file"
+                          accept="image/*"
+                          class="absolute inset-0 z-50 m-0 h-full w-full cursor-pointer p-0 opacity-0 outline-none"
+                        />
+                        <div
+                          class="flex flex-col items-center justify-center space-y-3"
+                        >
+                          <span
+                            class="flex h-10 w-10 items-center justify-center rounded-full border border-stroke bg-white dark:border-strokedark dark:bg-boxdark"
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M1.99967 9.33337C2.36786 9.33337 2.66634 9.63185 2.66634 10V12.6667C2.66634 12.8435 2.73658 13.0131 2.8616 13.1381C2.98663 13.2631 3.1562 13.3334 3.33301 13.3334H12.6663C12.8431 13.3334 13.0127 13.2631 13.1377 13.1381C13.2628 13.0131 13.333 12.8435 13.333 12.6667V10C13.333 9.63185 13.6315 9.33337 13.9997 9.33337C14.3679 9.33337 14.6663 9.63185 14.6663 10V12.6667C14.6663 13.1971 14.4556 13.7058 14.0806 14.0809C13.7055 14.456 13.1968 14.6667 12.6663 14.6667H3.33301C2.80257 14.6667 2.29387 14.456 1.91879 14.0809C1.54372 13.7058 1.33301 13.1971 1.33301 12.6667V10C1.33301 9.63185 1.63148 9.33337 1.99967 9.33337Z"
+                                fill="#3C50E0"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7.5286 1.52864C7.78894 1.26829 8.21106 1.26829 8.4714 1.52864L11.8047 4.86197C12.0651 5.12232 12.0651 5.54443 11.8047 5.80478C11.5444 6.06513 11.1223 6.06513 10.8619 5.80478L8 2.94285L5.13807 5.80478C4.87772 6.06513 4.45561 6.06513 4.19526 5.80478C3.93491 5.54443 3.93491 5.12232 4.19526 4.86197L7.5286 1.52864Z"
+                                fill="#3C50E0"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7.99967 1.33337C8.36786 1.33337 8.66634 1.63185 8.66634 2.00004V10C8.66634 10.3682 8.36786 10.6667 7.99967 10.6667C7.63148 10.6667 7.33301 10.3682 7.33301 10V2.00004C7.33301 1.63185 7.63148 1.33337 7.99967 1.33337Z"
+                                fill="#3C50E0"
+                              />
+                            </svg>
+                          </span>
+                          <p class="text-sm font-medium">
+                            <span class="text-primary">Klik untuk Upload</span>
+                            or drag and drop
+                          </p>
+                          <p class="mt-1.5 text-sm font-medium">
+                            SVG, PNG, JPG or GIF
+                          </p>
+                          <p class="text-sm font-medium">
+                            (max, 800 X 800px)
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex justify-end gap-5 mt-5 mb-5">
+                        <button
+                          class="flex justify-center rounded border border-stroke py-2 px-6 font-medium text-white bg-red-600 hover:shadow-1 dark:border-strokedark dark:text-white"
+                          type="submit"
+                        >
+                          Batal
+                        </button>
+                        <button
+                          class="flex justify-center rounded bg-primary py-2 px-6 font-medium text-white bg-blue-700"
+                          type="submit"
+                        >
+                          Simpan
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====== Settings Section End -->
+          </div>
+        </div>
+      </div>
+      </main> 
+
+    <!-- Hero Section End-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="../src/file-input.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../charts-tailwind.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
