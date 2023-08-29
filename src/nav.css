@@ -33,12 +33,12 @@ a {
     align-items:  center;
     justify-content:  space-between;
     padding:  0 1rem;
-    background-color:  var(--white-color);
+    background-color:  black;
     z-index:  var(--z-fixed);
     transition:  .5s;
 }
 .header_toggle {
-    color:  black;
+    color:  white;
     font-size:  1.5rem;
     cursor:  pointer;
 }
