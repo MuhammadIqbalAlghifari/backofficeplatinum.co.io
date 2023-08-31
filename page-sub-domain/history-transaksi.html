@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifikasi Produk - Dashboard</title>
+    <title>History Transaksi - Dashboard</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="../src/file-input.css">
@@ -84,7 +84,7 @@
                                         </a>
                                     </li>
                                     <li>    
-                                        <a href="./history-transaksi.html" class="nav_link">
+                                        <a href="./history transaksi.html" class="nav_link">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history w-5 h-5" viewBox="0 0 16 16">
                                                 <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
                                                 <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
@@ -105,84 +105,130 @@
         </div>
     </section>
 
-    <!-- End Sidebar -->
-
-    <!-- Hero Section Start -->
-
     <div class="py-4">
-         <div class="grid grid-cols-1">
-            <div class="flex flex-col items-center justify-center">
-               <p class="text-2xl text-gray-400 dark:text-gray-500 text-center lg:w-2/3">
-                  <h1 class="font-semibold title-font sm:text-4xl">Edit Asset di Halaman Verifikasi Produk</h1>
-               </p>
-            </div>
-         </div>
-
-         <div id="Home">
-            <div class="grid grid-cols-1 gap-4 mb-4">
-                <div class="items-center flex flex-col mt-5  justify-center">
-                    <p class="text-2xl text-gray-400 mt-4 dark:text-gray-500 text-center lg:w-2/3">
-                        <h2 class="font-semibold title-font mb-2 sm:text-4xl text-xl">Body</h2>
-                    </p>
-                </div>                  
-                <form>
-                    <div class="mb-6">
-                        <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Judul</label>
-                        <div class="summernote"></div>
-                      </div>
-                      <div class="mb-6">
-                        <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Form</label>
-                        <div class="summernote"></div>
-                      </div>
-                      
-                </form>
+        <div class="grid grid-cols-1 ">
+            <div class="flex flex-col items-center justify-center rounded mb-4">
+            <p class="text-2xl text-gray-400 dark:text-gray-500 text-center">
+                <h1 class="font-semibold title-font sm:text-4xl text-2xl">History Transaksi</h1>
+            </p>
             </div>
         </div>
-
-        <form>
-            <div class="flex flex-col items-center space-y-6">
-              <div class="mb-6">
-                <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gambar</label>
-              </div>
-              <div class="shrink-0">
-                <img id='preview_img' class="h-1/2 w-1/2 object-cover" src="https://lh3.googleusercontent.com/a-/AFdZucpC_6WFBIfaAbPHBwGM9z8SxyM1oV4wB4Ngwp_UyQ=s96-c" alt="Current profile photo" />
-              </div>
-              <label class="block">
-                <span class="sr-only">Choose profile photo</span>
-                <input type="file" onchange="loadFile(event)" class="block w-full text-sm text-slate-500
-                  file:mr-4 file:py-2 file:px-4
-                  file:border-0
-                  file:text-sm file:font-semibold
-                  file:bg-violet-50 file:text-violet-700
-                  hover:file:bg-violet-100
-                "/>
-              </label>
-            </div>
-          </form>
-  
-          <div class="grid grid-cols-1 mt-6">
-            <button class="bg-blue-600 text-white text-sm font-semibold py-2">Update</button>
-          </div>
-         
-      </div>
-  </div>
-
-    <!-- Hero Section End--><!-- Js Start -->
-
-    <script>
-        $('.summernote').summernote({
-          placeholder: 'Ketik Disini',
-          tabsize: 2,
-          height: 100
-        });
-      </script>
-
-    <!-- Js End -->
+    </div>
 
 
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    
+    <table class="w-full text-sm text-left text-black">
+        <thead class="text-xs text-white uppercase" style="background-color: black;">
+            <tr>
+                <th scope="col" class="px-6 py-3 text-center">
+                    ID Konsumen
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Nama Konsumen
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    No. Hp
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Kode Barang
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Nama Barang
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    No. Invoice
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Tanggal Invoice
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Nominal Belanja
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <th class="px-6 py-4 text-center">
+                  220223001
+                </th>
+                <td class="px-6 py-4 text-center">
+                  Asep
+                </td>
+                <td class="px-6 py-4 text-center">
+                    085XXXXXXXXXX
+                </td>
+                <td class="px-6 py-4 text-center">
+                    130472801
+                </td>
+                <td class="px-6 py-4 text-center">
+                    Atap Metal
+                </td>
+                <td class="px-6 py-4 text-center">
+                    00977301
+                </td>
+                <td class="px-6 py-4 text-center">
+                    23 Agustus 2023
+                </td>
+                <td class="px-6 py-4 text-center">
+                    Rp. 10.000.000
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                  <th class="px-6 py-4 text-center">
+                    220223002
+                  </th>
+                  <td class="px-6 py-4 text-center">
+                    Agus
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      085XXXXXXXXXX
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      130472802
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      Atap Metal
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      00977302
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      23 Agustus 2023
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      Rp. 10.000.000
+                  </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                  <th class="px-6 py-4 text-center">
+                    220223003
+                  </th>
+                  <td class="px-6 py-4 text-center">
+                    Engkus
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      085XXXXXXXXXX
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      130472803
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      Atap Metal
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      00977303
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      23 Agustus 2023
+                  </td>
+                  <td class="px-6 py-4 text-center">
+                      Rp. 10.000.000
+                  </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-    <script src="../src/file-input.js"></script>
-    <script src="../script.js"></script>
 </body>
 </html>
